@@ -1,0 +1,32 @@
+.btn button{
+    background-color: #292D2E;
+    margin-left: 9px;
+    box-shadow: none;
+    font-size: 16px;
+}
+
+.btn button:focus{
+    outline: none;
+}
+
+.signUpbtn{
+    border: 3px solid #0096ea;
+    border-radius: 20px;
+    outline: none;
+    color: white;
+}
+
+.signUpbtn:hover{
+    background-color: #0096ea;
+    color: white;
+}
+
+.loginbtn{
+    border: none;
+    color: #646c74;
+    outline: none;
+}
+
+.loginbtn:hover{
+    color: white;
+}
