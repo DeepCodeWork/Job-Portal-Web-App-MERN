@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from '../layout/Layout';
 
-const home = () => {
+const aboutSection = () => {
     return(
-        <Layout title="check lauout">
-            this is it
+        <Layout title="About">
+
         </Layout>
     )
 }
 
-export default home;
+export default aboutSection;

@@ -1,11 +1,13 @@
 import React from 'react';
+import Layout from '../../layout/Layout';
 
 const signup = () => {
     return(
-        <div>
-            <h1>Employee Signup</h1>
-        </div>
-    )
+
+        <Layout title="Employee signup">
+
+        </Layout>
+)
 }
 
 export default signup;
