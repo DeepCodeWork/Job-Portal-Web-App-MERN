@@ -1,10 +1,8 @@
-const mongoose = require('mongoose');
-const Validator = require('validator');
+const mongoose = require('mongoose')
 
-const employerSchema = mongoose.model("Employer",{
-    
+const employeeSchema = new mongoose.Schema({
     //Email object
-    employerEmail:{
+    email:{
         type:String,
         required:true,
         toLowerCase:true,
@@ -18,7 +16,7 @@ const employerSchema = mongoose.model("Employer",{
 
 
     //Password Object
-    employerPassword:{
+    password:{
         type:String,
         required:true,
         trim:true,
@@ -31,16 +29,33 @@ const employerSchema = mongoose.model("Employer",{
     },
 
     //Name Object
-    employerName:{
+    name:{
         type:String,
         required:true,
         trim:true,
         minlength:6
+    },
+
+    //Phone number
+    number:{
+        type:String,
+        required:"Enter the number",
+        trim:true,
+        minlength:10,
+        maxlength:10
+    },
+    
+    role:{
+        type:Number,
+        default:0
+    },
+
+    salt:{
+        type:String,
+
     }
+},{timestamps:true})
 
+const employeeModel = mongoose.model('employee',employeeSchema);
 
-})
-
-
-module.exports = employerSchema;
-
+module.exports = employeeModel;

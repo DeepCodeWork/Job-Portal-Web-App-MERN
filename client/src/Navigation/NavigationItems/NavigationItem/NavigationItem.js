@@ -8,7 +8,7 @@ const NavigationItem = (props) => {
 
     return (
         <li className={classes.navItem+" nav-item mx-2"}>
-            <Link className={isActive()+" nav-link"} to={props.link}>{props.children}</Link>
+            <Link className={isActive()+" nav-link "+ props.className} to={props.link}>{props.children}</Link>
          </li>
     );
 }

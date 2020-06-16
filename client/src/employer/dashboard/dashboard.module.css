@@ -1,0 +1,14 @@
+.dashboard{
+    height: 90vh;
+}
+
+.jobList{
+    height: 80vh;
+    overflow: auto;
+    border-bottom:1px solid lightgray;
+    padding-right: 3px;
+}
+
+.jobDescription{
+    
+}

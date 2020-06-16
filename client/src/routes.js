@@ -6,7 +6,9 @@ import employeeLogin from './employee/login/login';
 import employeeSignup from './employee/signup/signup';
 import homeSection from './home/home'; 
 import aboutSection from './aboutSection/aboutSection';
-
+import Dashboard from './employer/dashboard/dashboard';
+import PrivateRoute from './employer/auth/privateRoutes';
+import addJobForm from './employer/jobs/addJobForm/addJobForm';
 
 const Routes = () => {
     return(
@@ -18,6 +20,8 @@ const Routes = () => {
                 <Route path="/employer/Signup" exact component={employerSignup}/>
                 <Route path="/employee/login" exact component={employeeLogin}/>
                 <Route path="/employee/Signup" exact component={employeeSignup}/>
+                <PrivateRoute path="/employer/dashboard" exact component={Dashboard}/>
+                <PrivateRoute path="/employer/addjob" exact component={addJobForm}/>
             </Switch>
         </BrowserRouter>
     );

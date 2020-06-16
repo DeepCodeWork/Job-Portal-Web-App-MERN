@@ -1,14 +1,11 @@
 import React from 'react';
 import Navigation from '../Navigation/Navigation';
 
-const Layout = ({title,children}) => {
+const Layout = ({children}) => {
     return(
         <div>
             <Navigation/>
-            <p>{title}</p>
-            <p>
-                {children}
-            </p>
+            {children}
         </div>
     )
 }
